@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #e3f2fd, #ffffff);
+}
+
+.login-container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Left login form */
+.login-form {
+  flex: 1;
+  padding: 60px 40px;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-form h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #0077cc;
+}
+.login-form span {
+  color: #00bcd4;
+}
+
+.tab {
+  display: flex;
+  margin-bottom: 20px;
+}
+.tab button {
+  flex: 1;
+  padding: 10px;
+  cursor: pointer;
+  background: #f0f0f0;
+  border: none;
+  font-size: 16px;
+  transition: 0.3s;
+}
+.tab button.active {
+  background: #0077cc;
+  color: white;
+}
+
+.tabcontent {
+  display: none;
+}
+.tabcontent.active {
+  display: block;
+}
+
+form input {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+form button {
+  width: 100%;
+  padding: 15px;
+  background: #00bcd4;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+form button:hover {
+  background: #0097a7;
+}
+
+/* Right info section */
+.login-info {
+  flex: 1;
+  background: url('https://images.unsplash.com/photo-1588776814546-ec7fbc0a05a5') center/cover no-repeat;
+  color: white;
+  padding: 60px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+.login-info::before {
+  content: "";
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+.login-info * {
+  position: relative;
+  z-index: 1;
+}
+.login-info img {
+  width: 100px;
+  margin-bottom: 20px;
+  animation: float 3s infinite ease-in-out;
+}
+.login-info h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.login-info p {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+/* Floating animation */
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CareSpace – Hospital Bed Management</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+ <nav class="navbar">
+    <div class="logo">CareSpace</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="hospital_register.html">Hospital Registration</a></li>
+      <li><a href="user_register.html">User Registration</a></li>
+      <li><a href="#contact">Contact</a></li>
+     </ul>
+  </nav>
+
+
+  <header class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>Find Hospital Beds Easily with <span>CareSpace</span></h1>
+      <p>Real-time bed tracking. Trusted by hospitals & users.</p>
+      <div class="hero-buttons">
+        <a href="login.html#user" class="btn">User Login</a>
+        <a href="login.html#hospital" class="btn btn-secondary">Hospital Login</a>
+      </div>
+    </div>
+    <video autoplay muted loop id="bg-video">
+      <source src="https://www.videvo.net/videvo_files/converted/2022_09/preview/220801_01_Hospital_HD_010.mp492655.webm" type="video/mp4">
+    </video>
+  </header>
+  
+
+  <section class="info-section" id="about">
+    <h2>Why CareSpace?</h2>
+    <div class="info-cards">
+      <div class="card fade-in">
+        <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="Search Icon">
+        <h3>Search Beds</h3>
+        <p>Find hospital beds by your location with real-time updates.</p>
+      </div>
+      <div class="card fade-in delay1">
+        <img src="https://cdn-icons-png.flaticon.com/512/3602/3602123.png" alt="Realtime Icon">
+        <h3>Live Status</h3>
+        <p>ICU, General Ward, Emergency & Maternity availability.</p>
+      </div>
+      <div class="card fade-in delay2">
+        <img src="https://cdn-icons-png.flaticon.com/512/2910/2910791.png" alt="Secure Icon">
+        <h3>Secure Login</h3>
+        <p>Separate portals for hospitals and users with secure access.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-section" id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="4" required></textarea>
+      <button type="submit" class="btn">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 CareSpace. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

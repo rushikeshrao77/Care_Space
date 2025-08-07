@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CareSpace Login</title>
+  <link rel="stylesheet" href="login.css"/>
+</head>
+<body>
+  <div class="login-container">
+    <!-- Left Side – Login Form -->
+    <div class="login-form">
+      <h2>Welcome to <span>CareSpace</span></h2>
+      <div class="tab">
+        <button class="tablinks active" onclick="openTab(event, 'user')">User Login</button>
+        <button class="tablinks" onclick="openTab(event, 'hospital')">Hospital Login</button>
+      </div>
+
+      <!-- User Login Form -->
+      <div id="user" class="tabcontent active">
+        <form action="user_dashboard.html" method="get">
+          <input type="email" placeholder="User Email" required />
+          <input type="password" placeholder="Password" required />
+          <button type="submit">Login</button>
+        </form>
+      </div>
+
+      <!-- Hospital Login Form -->
+      <div id="hospital" class="tabcontent">
+        <form action="hospital_dashboard.html" method="get">
+          <input type="email" placeholder="Hospital Email" required />
+          <input type="password" placeholder="Password" required />
+          <button type="submit">Login</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Right Side – Info with Animation -->
+    <div class="login-info">
+      <img src="https://cdn-icons-png.flaticon.com/512/3771/3771481.png" alt="Healthcare Illustration"/>
+      <h3>Manage Beds Smartly</h3>
+      <p>Live status for ICU, General, Emergency, and Maternity wards.</p>
+      <p>Secure access for hospitals and users with real-time data.</p>
+    </div>
+  </div>
+
+  <script>
+    function openTab(evt, tabName) {
+      const tabs = document.querySelectorAll(".tabcontent");
+      const buttons = document.querySelectorAll(".tablinks");
+      tabs.forEach(tab => tab.classList.remove("active"));
+      buttons.forEach(btn => btn.classList.remove("active"));
+      document.getElementById(tabName).classList.add("active");
+      evt.currentTarget.classList.add("active");
+    }
+  </script>
+</body>
+</html>
